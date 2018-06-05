@@ -13,34 +13,21 @@ public class TaxCalculatorTest {
     private TaxCalculator calculator;
 
     @BeforeEach
-    public void init(){
+    public void init() {
         this.calculator = new TaxCalculator();
     }
 
     @Test
     public void calculatesTaxForProduct() {
-        Product product = getProduct(12.99);
-        ProductTax productTax = getProductTax(0.23);
+        BigDecimal price = BigDecimal.valueOf(12.99);
+        BigDecimal productTax = BigDecimal.valueOf(0.23);
 
-        BigDecimal tax = calculator.calculateTax(product, productTax);
+        BigDecimal tax = calculator.calculateTax(price, productTax);
 
-        assertEquals(BigDecimal.valueOf(2.9877),tax);
+        assertEquals(BigDecimal.valueOf(2.9877), tax);
     }
 
-    private Product getProduct(double price) {
-        return Product.Builder.aProduct()
-                .id(1L)
-                .name("name")
-                .price(BigDecimal.valueOf(price))
-                .build();
-    }
+                                        public void method(String[] args){
 
-    private ProductTax getProductTax(double tax) {
-        return ProductTax.Builder.aProductTax()
-                .id(1L)
-                .taxAmount(BigDecimal.valueOf(tax))
-                .maxProductCount(100L)
-                .taxInfo("Some info")
-                .build();
-    }
+                                        }
 }
