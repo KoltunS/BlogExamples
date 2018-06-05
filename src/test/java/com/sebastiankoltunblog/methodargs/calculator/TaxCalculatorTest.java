@@ -27,7 +27,4 @@ public class TaxCalculatorTest {
         assertEquals(BigDecimal.valueOf(2.9877), tax);
     }
 
-                                        public void method(String[] args){
-
-                                        }
 }
