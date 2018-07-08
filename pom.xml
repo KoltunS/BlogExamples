@@ -81,6 +81,21 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sebastiankoltunblog</groupId>
+            <artifactId>CommandHandlerPattern</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sebastiankoltunblog</groupId>
+            <artifactId>ExampleDTO</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sebastiankoltunblog</groupId>
+            <artifactId>RestAPI</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
         <dependency>
             <groupId>org.mockito</groupId>
