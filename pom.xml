@@ -88,7 +88,7 @@
         </dependency>
         <dependency>
             <groupId>com.sebastiankoltunblog</groupId>
-            <artifactId>ExampleDTO</artifactId>
+            <artifactId>DTO</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
